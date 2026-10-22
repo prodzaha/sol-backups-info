@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Privacy Policy for the personal Sol Backups Google Drive integration.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Privacy Policy — Sol Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <p><a href="./">Sol Backups</a></p>
+    <h1>Privacy Policy</h1>
+    <p>Effective date: 22 October 2026.</p>
+    <p>This policy describes the personal-use Sol Backups Google Drive
+      integration, operated by <a href="https://github.com/prodzaha">prodzaha</a>.
+      It is not a privacy policy for every component of Sol.</p>
+    <h2>Data accessed and purpose</h2>
+    <p>The integration uses Google OAuth authorization and the
+      <code>drive.file</code> permission to upload, list, read and manage its backup
+      repository files and their metadata in the authorized account's Google
+      Drive. This includes temporary repository lock files. Its purpose is
+      encrypted backup, integrity checking and restoration, not general access to
+      unrelated Drive files.</p>
+    <h2>Storage and protection</h2>
+    <p>restic processes the selected source data on operator-controlled devices
+      and encrypts repository contents before rclone uploads them to Google Drive.
+      Backup contents may be restored to an operator-controlled device. Encryption
+      does not hide all service metadata, such as object sizes and transfer times,
+      from the storage provider.</p>
+    <p>OAuth credentials and recovery secrets are kept on operator-controlled
+      devices, separate from this public documentation site. Google account
+      passwords are not supplied to this integration. No credentials, backup
+      contents or recovery passwords are published on this site or in its source
+      repository.</p>
+    <h2>Sharing and use</h2>
+    <p>Backup data is not sold, used for advertising, or supplied to AI model
+      training through this integration. Encrypted backup objects and associated
+      service metadata are transferred to Google Drive as needed to provide
+      storage and recovery. The integration does not intentionally make backup
+      files public; existing account access and sharing settings remain relevant.</p>
+    <p>Sol Backups' use and transfer of information received from Google APIs
+      adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      including the Limited Use requirements.</p>
+    <h2>Retention, deletion and revocation</h2>
+    <p>Backup objects remain in the operator's Drive until the operator authorizes
+      their removal. This policy does not promise an automatic retention or
+      deletion schedule. Local recovery copies remain under the operator's
+      control. Temporary repository locks may be removed after backup operations.</p>
+    <p>The account owner can revoke the integration's access using
+      <a href="https://myaccount.google.com/connections">Google Account connections</a>.
+      Revocation prevents further authorized access; it does not itself delete
+      existing Drive backup objects or local recovery copies. The owner controls
+      their removal separately.</p>
+    <h2>This documentation website</h2>
+    <p>This site has no sign-in form, scripts, analytics or application cookies.
+      It does not accept backup uploads. GitHub Pages hosts the site and may
+      process visitor information, such as IP addresses, under the
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+      Google's services are separately governed by the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <h2>Contact and changes</h2>
+    <p>The operator is identified by the linked GitHub profile. Authorized users
+      can contact the operator through the support contact displayed on the
+      Google OAuth consent screen. Do not publish credentials or private backup
+      data in public GitHub messages. Policy changes will be reflected here with
+      an updated effective date.</p>
+  </main>
+</body>
+</html>
